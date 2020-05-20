@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORONAVIR</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['geochart'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', 'Popularity'],
+        ['India', '2000'],
+      ]);
+
+      var options = {
+        region: 'IN',
+        backgroundColor: 'white',
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('geochart-ind'));
+
+      chart.draw(data, options);
+    };
+  </script>
+
+
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['geochart'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', 'Popularity'],
+        ['Germany', 200],
+        ['United States', 300],
+        ['Brazil', 400],
+        ['Canada', 500],
+        ['France', 600],
+        ['RU', 700]
+      ]);
+
+      var options = {};
+
+      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+      chart.draw(data, options);
+    };
+  </script>
+
+
+
+</head>
+
+<body>
+
+  
+    <!--Title-->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12"  style="background-color:black ; padding:10px 5px;">
+          <h4 style="text-align: center; color:rgb(255, 255, 255); "><strong>CoronaVIR: Computational Resources on Novel
+              Coronavirus</strong></h3>
+      <div class="col-md-12">
+          <h5 style="text-align: center; color:rgb(255, 255, 255);"><strong>(SARS-CoV-2 or COVID-19)</strong></h4>
+</div>        
+      </div>
+    </div>
+  </div>
+    </section>
+    <!--Title end-->
+
+
+    <!--                                            Header                                      -->
+    <section>
+      <nav class="navbar navbar-expand-md navbar-light " style="background-color: rgb(255, 255, 255) ;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span><strong>MENU</strong></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav col-md-12">
+            <li class="nav-item col-md-2">
+              <a class="nav-link active" href="#" style="text-align: center; color:black;"><b>HOME</b>
+              </a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link " href="#" style="color:black ;text-align: center;"><b>GENOMICS</b>
+              </a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link text_color" href="#" style="color:black; text-align: center;"><b>DIAGNOSIS</b>
+              </a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link text_color" href="#" style="color:black; text-align: center;"><b>IMMUNOTHERAPY</b>
+              </a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link text_color" href="#" style="color:black; text-align: center;"><b>DRUG DESIGNING</b>
+              </a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link text_color" href="#" style="color:black; text-align: center;"><b>USEFUL LINKS</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!------------------------Header End----------------------->
+
+
+
+    <!--Description Section-->
+    <section class="sec">
+      <div class="col-md-12 col-sm-12">
+ <div class="overlay"></div>
+   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="mp.mp4" type="video/mp4">
+  </video>
+         <div class="container ">
+
+      <div class="text-white text-center align-items-center" style="margin-top:;">
+      <div class="col-md-12">
+        <h2 ><strong>Home Page CoronaVIR</strong></h1>
+        </div>
+        <div class="col-md-12">
+        <p class="lead  ">Aim of this web site is to
+            facilitate the scientific community to fight against severe pandemic disease
+            COVID-19 caused by SARS-CoV-2. Here, We have collected and organized information related to novel strain of
+            coronavirus, i.e. SARS-CoV-2.and its resulting disease COVID-19 from the literature and other resources from
+            the Internet. We are providing links to appropriate literature. Moreover, we are Bioinformatics Group, based
+            on our knowledge and expertise, we are also proposing potential diagnostics primers, peptide and RNA based
+            vaccine candidates and potential drug molecules. These are predicted candidates, need to be validated by
+            experimental Researchers, who have appropriate infrastructure. It is an integrated multi-omics repository
+            dedicated to current genomic, proteomic, diagnostic and therapeutic knowledge about coronaviruses
+            particularly
+            the recent strain, i.e. SARS-CoV-2 or 2019-nCoV. This web resource will be helpful for the researchers
+            engaged
+            in the development of therapies and drugs for the COVID-19. The information is collected from various
+            available resources</p>
+      </div>
+      </div>
+  </div>
+    </section>
+    <!--Description Section End-->
+
+
+
+
+    <!--Map Section-->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-md-12">
+              <h4 style="text-align: center; padding:10px 0px;"><strong>Status in India</strong></h4>
+            </div>
+            <div id="geochart-ind" style="max-width: 100%; height:auto; "></div>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><b>Active Case = 1452</b></li>
+              <li class="list-group-item" style="text-align: center;"><b>Total Death = 38</b></li>
+              <li class="list-group-item" style="text-align: center;"><b>Healed = 150</b></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h4 style="text-align: center; padding:10px 0px;"><strong>Status in World</strong></h4>
+            <div id="regions_div" style="max-width: 100%; height: auto;"></div>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><b>Active Case = 450000</b></li>
+              <li class="list-group-item" style="text-align: center;"><b>Total Death = 40000</b></li>
+              <li class="list-group-item" style="text-align: center;"><b>Healed = 1500000</b></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--Map Section End-->
+
+
+
+
+
+
+
+
+
+
+
+    <section style="background-color: black  ; padding:10px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="padding: 20px;">
+            <h4 style="text-align: center; padding:10px 0px; color:rgb(255, 255, 255);"><strong>URL of Important
+                Videos</strong>
+            </h4>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=T0nXfALHJX4" target="_blank" style="color: black;"><b>WHO
+                    Update</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=JKpVMivbTfg" style="color: black;"
+                  target="_blank"><b>Coronavirus
+                    Update</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=rAj38E7vrS8" style="color: black;" target="_blank"> <b>Global
+                    Prevention</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=9Ay4u7OYOhA" style="color: black;" target="_blank"><b>Six
+                    Steps</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=qPoptbtBjkg" style="color: black;" target="_blank"><b>10 things
+                    to
+                    mange</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?time_continue=226&v=mOV1aBVYKGA&feature=emb_logo"
+                  style="color: black;" target="_blank"><b>Diagnosing
+                    coronavirus</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=YNIL7C60ayU" style="color: black;" target="_blank">
+                  <b>Diagnostics
+                    (RT
+                    PCR)</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=omzHESciaWg" style="color: black;" target="_blank"><b>Mechanism
+                    of
+                    action</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=PWzbArPgo-o&list=PL7cIEbGG94IheZbEIg72mXpTzui21UnAi&index=5&t=0s"
+                  style="color: black;" target="_blank"><b>Detailed
+                    Mechanism</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=XOLB0r35Tao&fbclid=IwAR1Iaz14rSknJQbYUhjsJTaWduZLgUNCYk15jXDjLyOt-Y2M0MI4D-nSACo"
+                  style="color: black;" target="_blank"><b>WashKaro
+                    2.0</b></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6" style="padding-top: 20px;">
+            <h4 style="text-align: center; padding:10px 0px; color:rgb(255, 255, 255);"><strong>Youtube Videos</strong>
+            </h4>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/T0nXfALHJX4" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <!--Important Links  Section-->
+    <section style="padding: 10px; background-color: rgb(255, 255, 255)  ;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 col-sm-12" style="padding: 5px;">
+            <div class="col-md-12">
+              <h4 style="text-align: center; padding:10px 0px;"><strong>Research Articles</strong></h4>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.ncbi.nlm.nih.gov/pubmed/31992387" style="color: black;"
+                  target="_blank"><b>Diagnostics
+                    (RT-PCR)</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.ncbi.nlm.nih.gov/pubmed/32132196" style="color: black;"
+                  target="_blank"><b>Diagnostics
+                    (RdRp)</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7065369/"
+                  style="color: black;"><b>GlobalGeographical tracking</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.ncbi.nlm.nih.gov/pubmed/32134278" style="color: black;" target="_blank"><b>Antibody
+                    therapy</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.ncbi.nlm.nih.gov/pubmed/32178711" style="color: black;"
+                  target="_blank"><b>Treatment</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://science.sciencemag.org/content/367/6485/1434.1.long" style="color: black;"
+                  target="_blank"><b>Drug
+                    advice</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/link.php" style="color: black;"
+                  target="_blank"><b>More</b></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12" style="padding: 5px;">
+            <div class="col-md-12">
+              <h4 style="text-align: center; padding:10px 0px;"><strong>Links to Important Sites </strong></h4>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" style="color: black;"
+                  target="_blank"><b>WHO
+                    COVID-19</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/link.php" style="color: black;"
+                  target="_blank"><b>Research
+                    Articles</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/f.php" style="color: black;"
+                  target="_blank"><b>FAQ</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.worldometers.info/coronavirus/" style="color: black;" target="_blank"><b>World
+                    Meter</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/diag1.php" style="color: black;"
+                  target="_blank"><b>Diagnostics
+                    (Documents)</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/dm.php" style="color: black;"
+                  target="_blank"><b>Possible
+                    Drugs</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/all.php" style="color: black;"
+                  target="_blank"><b>Epitopes for
+                    Vaccine</b></a></li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="col-md-4" style="padding: 5px;">
+            <div class="col-md-12">
+              <h4 style="text-align: center; padding:10px 0px; "><strong>Web Sites for India </strong></h4>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item" style="text-align: center;"><a href="https://www.mohfw.gov.in/"
+                  style="color: black;" target="_blank"><b>WHOMinistry
+                    of Health</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://www.youtube.com/watch?v=6J2voLoMdp8" style="color: black;" target="_blank"> <b>Drug:
+                    Hydroxy-Chloroquine</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://icmr.nic.in/sites/default/files/upload_documents/Final_Government_Laboratories_Testing_2303.pdf"
+                  style="color: black;" target="_blank"> <b>Test
+                    Labs</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://icmr.nic.in/sites/default/files/upload_documents/Private_Lab_23032020_V2.pdf"
+                  style="color: black;" target="_blank"><b>Private
+                    Labs</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a href="https://icmr.nic.in/content/covid-19"
+                  style="color: black;" target="_blank"><b>ICMR
+                    Update</b></a>
+              </li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://ncdc.gov.in/index4.php?lang=1&level=0&linkid=127&lid=432" style="color: black;"
+                  target="_blank"><b>Help Line
+                    (NCDC)</b></a></li>
+              <li class="list-group-item" style="text-align: center;"><a
+                  href="https://webs.iiitd.edu.in/raghava/coronavir/index.html" style="color: black;"
+                  target="_blank"><b>Update (MEA)</b></a>
+              </li>
+
+            </ul>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <!-- Footer -->
+
+    <footer class="page-footer font-small white" style="background-color: black;">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 " style="color:red;">© 2020 Copyright:
+        <a href="#" style="color: white;"><b>Epic Dream</b></a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-dropdownhover.min.js"></script>
+</body>
+
+</html>

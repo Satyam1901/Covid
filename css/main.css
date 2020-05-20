@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lora', serif;
+}
+.text_color{
+color: white;
+
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: none;
+}
+.sec {
+    position: relative;
+    background-color: black;
+    height: 125vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  video {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .sec .container {
+    position: relative;
+    top: 35vh;
+    z-index: 1;
+    height: auto;
+  }
+
+   .overlay {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+ 
